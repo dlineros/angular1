@@ -1,0 +1,18 @@
+<h4>Agregar firmante</h4>
+
+<form class="row" (ngSubmit)="emitCharacter()">
+
+<input type="text"
+name="name"
+[(ngModel)]="character.name"
+class="form-control"
+placeholder="Nombre">
+
+<input type="number"
+name="power"
+[(ngModel)]="character.power"
+class="form-control" placeholder="Poder">
+
+<button type="submit" class="btn btn-primary" >Agregar Firmante</button >
+<pre>{{character | json}}</pre>
+</form>

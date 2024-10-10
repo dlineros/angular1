@@ -1,0 +1,16 @@
+<h1>Listado de Firmantes</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+
+<app-listafirmante [characterList]="characters"
+(onDelete)="onDeleteCharacter($event)"
+></app-listafirmante>
+</div>
+  <div class="col">
+<app-agregafirmante (onNewCharacter)="onNewCharacter($event)"></app-agregafirmante>
+
+
+  </div>
+</div>
